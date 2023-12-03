@@ -10,6 +10,7 @@ platforms in a scalable and consistent manner.
 
 <!--Include some quick examples that cover the most common use cases for your collection content. It can include the following examples of installation and upgrade (change puzzle.opnsense correspondingly):-->
 
+
 ### Installing the Collection from Ansible Galaxy
 
 Before using this collection, you need to install it with the Ansible Galaxy command-line tool:
@@ -110,7 +111,7 @@ it!
 See the [changelog](https://github.com/puzzle/puzzle.opnsense/tree/main/CHANGELOG.rst).
 
 ## Roadmap
- 
+
 We plan to regularly release minor and patch versions, whenever new features are added or bugs fixed. Our collection follows [semantic versioning](https://semver.org/), so breaking changes will only happen in major releases.
 
 ## More information
