@@ -1,0 +1,8 @@
+---
+edit_on_github:
+  repository: puzzle/puzzle.opnsense
+  branch: main
+
+extra_links:
+  - description: Report an issue
+    url: https://github.com/puzzle/puzzle.opnsense/issues/new/choose
