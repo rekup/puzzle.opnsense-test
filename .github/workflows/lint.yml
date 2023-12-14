@@ -1,18 +1,11 @@
 name: Lint
 
-on:
-  # Run CI against all pushes (direct commits, also merged PRs), Pull Requests
-  push:
-    branches:
-      - main
-      - stable-*
-  pull_request:
-  # Run CI once per day (at 06:00 UTC)
-  # This ensures that even if there haven't been commits that we are still
-  # testing against latest version of ansible-test for each ansible-core
-  # version
-  schedule:
-    - cron: '0 6 * * *'
+on: [pull_request]
+
+
+permissions:
+  checks: write
+  contents: write
 
 concurrency:
   group: >-
@@ -33,7 +26,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v1
         with:
-          python-version: 3.8
+          python-version: "3.10"
 
       - name: Install Python dependencies
         run: pip install black pylint
