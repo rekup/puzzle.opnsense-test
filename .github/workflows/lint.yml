@@ -1,11 +1,6 @@
 name: Lint
 
-on:
-  # Run CI against all pushes (direct commits, also merged PRs), Pull Requests
-  push:
-    branches:
-      - main
-      - stable-*
+on: [push, pull_request]
 
 concurrency:
   group: >-
