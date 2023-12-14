@@ -9,6 +9,10 @@ concurrency:
     }}
   cancel-in-progress: true
 
+permissions:
+  checks: write
+  contents: write
+
 jobs:
   run-linters:
     name: Run linters
